@@ -1,0 +1,7 @@
+.gradle/
+.idea/
+build/
+FlowLayout.iml
+app/build
+app/app.iml
+local.properties
