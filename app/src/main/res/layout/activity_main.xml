@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1榴莲"
+            android:text="榴莲"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -37,7 +37,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2草莓芝士蛋糕"
+            android:text="草莓芝士蛋糕"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3自热火锅"
+            android:text="自热火锅"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -53,7 +53,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4鸡蛋"
+            android:text="鸡蛋"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -61,7 +61,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5山地自行车"
+            android:text="山地自行车"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -69,7 +69,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6火龙果"
+            android:text="火龙果"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -77,7 +77,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7Mackbook pro"
+            android:text="Mackbook pro"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -85,7 +85,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="8苹果"
+            android:text="车厘子"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -93,7 +93,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="9奥利奥"
+            android:text="奥利奥"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -101,7 +101,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10休闲零食"
+            android:text="喜之郎果冻"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -109,7 +109,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="11数据线"
+            android:text="Type-C数据线"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
@@ -117,7 +117,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="12超级无敌很长很长的一个标签超级无敌很长很长的一个标签"
+            android:text="超级无敌很长很长的一个标签超级无敌很长很长的一个标签"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:padding="3dp"
