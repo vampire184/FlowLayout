@@ -11,10 +11,15 @@ import kotlin.math.max
 class FlowLayout : ViewGroup{
 
     private val TAG = "FlowLayout"
+    //列间距
     private var hPadding: Int = dp2px(8)
+    //行间距
     private var vPadding: Int = dp2px(5)
+    //用来保存所有行的view
     private var mAllViews: ArrayList<ArrayList<View>> = ArrayList()
+    //用来保存某一行的view
     private var mLineViews: ArrayList<View> = ArrayList()
+    //保存每一行的行高
     private var mLineHeight: ArrayList<Int> = ArrayList()
 
 
@@ -51,11 +56,9 @@ class FlowLayout : ViewGroup{
             measureChildWithMargins(view,widthMeasureSpec,0,heightMeasureSpec,0)
             val childWidth = view.measuredWidth+childParams.leftMargin+childParams.rightMargin
             val childHeight = view.measuredHeight+childParams.topMargin+childParams.bottomMargin
-            if (index==childCount-1){
-                Log.d(TAG, "孩子宽度：$childWidth 高度：$childHeight")
-            }
 
             remainWidth -= (childWidth+hPadding)
+            //如果可用宽度<=0，说明这一行剩余空间不够放置此view，需要另起一行
             if (remainWidth<=0){
                 //重置每行的可用宽度
                 remainWidth = measureWidth-childWidth-hPadding
@@ -78,6 +81,8 @@ class FlowLayout : ViewGroup{
                 //这一行的最高的view的高度为该行的高度
                 tempHeight = max(tempHeight,childHeight+vPadding)
             }
+            //当遍历到最后一个view的时候，需要将它添加到集合中，因为添加集合的操作是在下一个遍历的时候进行的判断
+            //此时已经是最后一个view，不可能走下一个遍历，因此需要单独处理
             if (index == childCount-1){
                 //重置每行的可用宽度
                 remainWidth = measureWidth-childWidth-hPadding
@@ -104,6 +109,7 @@ class FlowLayout : ViewGroup{
         var left = paddingLeft
         var top = paddingTop
 
+        //遍历所有子孩子，按照计算好的位置进行绘制
         mAllViews.forEachIndexed { index,list ->
 
             list.forEach {
@@ -121,6 +127,7 @@ class FlowLayout : ViewGroup{
         }
     }
 
+    //⚠️注意，这个地方我们需要给这个自定义view设置LayoutParams类型，目的是给子孩子使用
     override fun generateLayoutParams(attrs: AttributeSet?): LayoutParams {
         return MarginLayoutParams(context,attrs)
     }
